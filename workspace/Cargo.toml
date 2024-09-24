@@ -16,4 +16,4 @@ debug = true
 
 # TODO: Will be deleted after release
 [replace]
-"ckb-std:0.15.3" = { git = "https://github.com/joii2020/ckb-std.git", rev = "7d59e64dc6cf44dbd0a1af9a6333f2a3a23bfd8a" }
+"ckb-std:0.15.3" = { git = "https://github.com/joii2020/ckb-std.git", rev = "d208c933ea03a1fd80db7f8eb1057ab5d5520b8c" }
