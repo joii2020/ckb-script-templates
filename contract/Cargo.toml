@@ -4,7 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-ckb-std = "0.15.3"
+ckb-std = { version = "0.15.3", default-features = false }
 
 [features]
-native-simulator = ["ckb-std/native-simulator"]
+default = [ "risc-v-contract" ]
+risc-v-contract = [ "ckb-std/allocator", "ckb-std/calc-hash", "ckb-std/ckb-types", "ckb-std/libc" ]
+native-simulator = ["ckb-std/native-simulator", "ckb-std/allocator", "ckb-std/calc-hash", "ckb-std/ckb-types", "ckb-std/libc"]
